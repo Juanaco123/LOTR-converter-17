@@ -13,6 +13,10 @@
 		56121EA42BD28DC3000A7F7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56121EA32BD28DC3000A7F7A /* Preview Assets.xcassets */; };
 		56121EAB2BD2CC1C000A7F7A /* ExchangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56121EAA2BD2CC1C000A7F7A /* ExchangeInfo.swift */; };
 		56121EAD2BD2D342000A7F7A /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56121EAC2BD2D342000A7F7A /* ExchangeRate.swift */; };
+		56121EAF2BD411CC000A7F7A /* SelectCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56121EAE2BD411CC000A7F7A /* SelectCurrency.swift */; };
+		56121EB12BD41669000A7F7A /* CurrencyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56121EB02BD41669000A7F7A /* CurrencyIcon.swift */; };
+		56121EB32BD4260C000A7F7A /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56121EB22BD4260C000A7F7A /* Currency.swift */; };
+		563EFEA92BD6BD4C00397CC4 /* IconGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EFEA82BD6BD4C00397CC4 /* IconGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		56121EA32BD28DC3000A7F7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		56121EAA2BD2CC1C000A7F7A /* ExchangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeInfo.swift; sourceTree = "<group>"; };
 		56121EAC2BD2D342000A7F7A /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		56121EAE2BD411CC000A7F7A /* SelectCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrency.swift; sourceTree = "<group>"; };
+		56121EB02BD41669000A7F7A /* CurrencyIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyIcon.swift; sourceTree = "<group>"; };
+		56121EB22BD4260C000A7F7A /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		563EFEA82BD6BD4C00397CC4 /* IconGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 			children = (
 				56121E9C2BD28DC1000A7F7A /* LOTRConverter17App.swift */,
 				56121E9E2BD28DC1000A7F7A /* ContentView.swift */,
+				56121EAE2BD411CC000A7F7A /* SelectCurrency.swift */,
+				563EFEA82BD6BD4C00397CC4 /* IconGrid.swift */,
+				56121EB02BD41669000A7F7A /* CurrencyIcon.swift */,
+				56121EB22BD4260C000A7F7A /* Currency.swift */,
 				56121EAA2BD2CC1C000A7F7A /* ExchangeInfo.swift */,
 				56121EAC2BD2D342000A7F7A /* ExchangeRate.swift */,
 				56121EA02BD28DC3000A7F7A /* Assets.xcassets */,
@@ -143,10 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563EFEA92BD6BD4C00397CC4 /* IconGrid.swift in Sources */,
 				56121EAD2BD2D342000A7F7A /* ExchangeRate.swift in Sources */,
+				56121EAF2BD411CC000A7F7A /* SelectCurrency.swift in Sources */,
 				56121EAB2BD2CC1C000A7F7A /* ExchangeInfo.swift in Sources */,
 				56121E9F2BD28DC1000A7F7A /* ContentView.swift in Sources */,
 				56121E9D2BD28DC1000A7F7A /* LOTRConverter17App.swift in Sources */,
+				56121EB32BD4260C000A7F7A /* Currency.swift in Sources */,
+				56121EB12BD41669000A7F7A /* CurrencyIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
