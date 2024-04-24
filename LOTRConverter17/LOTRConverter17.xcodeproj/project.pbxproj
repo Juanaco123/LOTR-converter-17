@@ -17,6 +17,7 @@
 		56121EB12BD41669000A7F7A /* CurrencyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56121EB02BD41669000A7F7A /* CurrencyIcon.swift */; };
 		56121EB32BD4260C000A7F7A /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56121EB22BD4260C000A7F7A /* Currency.swift */; };
 		563EFEA92BD6BD4C00397CC4 /* IconGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EFEA82BD6BD4C00397CC4 /* IconGrid.swift */; };
+		563EFEAB2BD9A50800397CC4 /* CurrencyTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EFEAA2BD9A50800397CC4 /* CurrencyTip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		56121EB02BD41669000A7F7A /* CurrencyIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyIcon.swift; sourceTree = "<group>"; };
 		56121EB22BD4260C000A7F7A /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		563EFEA82BD6BD4C00397CC4 /* IconGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconGrid.swift; sourceTree = "<group>"; };
+		563EFEAA2BD9A50800397CC4 /* CurrencyTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				56121E9C2BD28DC1000A7F7A /* LOTRConverter17App.swift */,
 				56121E9E2BD28DC1000A7F7A /* ContentView.swift */,
+				563EFEAA2BD9A50800397CC4 /* CurrencyTip.swift */,
 				56121EAE2BD411CC000A7F7A /* SelectCurrency.swift */,
 				563EFEA82BD6BD4C00397CC4 /* IconGrid.swift */,
 				56121EB02BD41669000A7F7A /* CurrencyIcon.swift */,
@@ -160,6 +163,7 @@
 				56121EAF2BD411CC000A7F7A /* SelectCurrency.swift in Sources */,
 				56121EAB2BD2CC1C000A7F7A /* ExchangeInfo.swift in Sources */,
 				56121E9F2BD28DC1000A7F7A /* ContentView.swift in Sources */,
+				563EFEAB2BD9A50800397CC4 /* CurrencyTip.swift in Sources */,
 				56121E9D2BD28DC1000A7F7A /* LOTRConverter17App.swift in Sources */,
 				56121EB32BD4260C000A7F7A /* Currency.swift in Sources */,
 				56121EB12BD41669000A7F7A /* CurrencyIcon.swift in Sources */,
