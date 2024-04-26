@@ -18,8 +18,16 @@ struct ContentView: View {
     @FocusState var leftTyping
     @FocusState var rightTyping
     
-    @State var leftCurrency: Currency = .silverPiece
-    @State var rightCurrency: Currency = .goldPiece
+    @State var leftCurrency: Currency
+    @State var rightCurrency: Currency
+    
+    init() {
+        let savedLeftCurrency = UserDefaults.standard.value(forKey: "TopCurrency") as? Double ?? Currency.silverPiece.rawValue
+        let savedRightCurrency = UserDefaults.standard.value(forKey: "BottomCurrency") as? Double ?? Currency.goldPiece.rawValue
+        
+        leftCurrency = Currency(rawValue: savedLeftCurrency)!
+        rightCurrency = Currency(rawValue: savedRightCurrency)!
+    }
     
     var body: some View {
         ZStack {
@@ -43,33 +51,14 @@ struct ContentView: View {
                 // Currency conversion section
                 HStack {
                     // Left conversion section
-                    VStack {
-                        // Currency
-                        HStack {
-                            // Currency image
-                            Image(leftCurrency.image)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 33)
-                            
-                            // Currency text
-                            Text(leftCurrency.name)
-                                .font(.headline)
-                                .foregroundStyle(.white)
-                        }
-                        .padding(.bottom, -5)
-                        .onTapGesture {
-                            showSelectCurrency.toggle()
-                        }
-                        .popoverTip(CurrencyTip(), arrowEdge: .bottom)
-                        
-                        // TextField
-                        TextField("Amount", text: $leftAmount)
-                            .textFieldStyle(.roundedBorder)
-                            .focused($leftTyping)
-                            .keyboardType(.decimalPad)
-                    }
-                    
+                    ConversionSection(
+                        currency: leftCurrency,
+                        textAlignment: .leading,
+                        amount: $leftAmount,
+                        showCurrencySelection: $showSelectCurrency,
+                        isTyping: _leftTyping
+                    )
+                    .popoverTip(CurrencyTip(), arrowEdge: .bottom)
                     // Equal sign
                     Image(systemName: "equal")
                         .font(.largeTitle)
@@ -78,31 +67,13 @@ struct ContentView: View {
                     
                     // Right conversion section
                     VStack {
-                        // Currency
-                        HStack {
-                            // Currency text
-                            Text(rightCurrency.name)
-                                .font(.headline)
-                                .foregroundStyle(.white)
-                            
-                            // Currency image
-                            Image(rightCurrency.image)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 33)
-                        }
-                        .padding(.bottom, -5)
-                        .onTapGesture {
-                            showSelectCurrency.toggle()
-                            
-                        }
-                        
-                        // TextField
-                        TextField("Amount", text: $rightAmount)
-                            .textFieldStyle(.roundedBorder)
-                            .multilineTextAlignment(.trailing)
-                            .focused($rightTyping)
-                            .keyboardType(.decimalPad)
+                        ConversionSection(
+                            currency: rightCurrency,
+                            textAlignment: .trailing,
+                            amount: $rightAmount,
+                            showCurrencySelection: $showSelectCurrency,
+                            isTyping: _rightTyping
+                        )
                     }
                 }
                 .padding()
@@ -151,6 +122,9 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showSelectCurrency) {
             SelectCurrency(topCurrency: $leftCurrency, bottomCurrency: $rightCurrency)
+        }
+        .onTapGesture {
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
         }
     }
 }

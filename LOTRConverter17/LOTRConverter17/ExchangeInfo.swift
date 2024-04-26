@@ -47,7 +47,12 @@ struct ExchangeInfo: View {
                 
                 ExchangeRate(
                     leftImage: .silverpenny,
-                    text: "1 Silver Penny = 100 Copper Pennies",
+                    text: "1 Silver Penny = 16 Copper Pieces",
+                    rightImage: .copperPiece)
+                
+                ExchangeRate(
+                    leftImage: .copperPiece,
+                    text: "1 Copper Piece = 100 Copper Pennies",
                     rightImage: .copperpenny)
                 
                 

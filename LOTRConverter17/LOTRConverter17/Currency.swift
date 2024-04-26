@@ -9,8 +9,9 @@ import SwiftUI
 
 enum Currency: Double, CaseIterable, Identifiable {
     case copperPenny = 6400
-    case silverPenny = 64
-    case silverPiece = 16
+    case copperPiece = 1600
+    case silverPenny = 1024
+    case silverPiece = 64
     case goldPenny = 4
     case goldPiece = 1
     
@@ -20,6 +21,8 @@ enum Currency: Double, CaseIterable, Identifiable {
         switch self {
         case .copperPenny:
                 .copperpenny
+        case .copperPiece:
+                .copperPiece
         case .silverPenny:
                 .silverpenny
         case .silverPiece:
@@ -35,6 +38,8 @@ enum Currency: Double, CaseIterable, Identifiable {
         switch self {
         case .copperPenny:
             "Copper Penny"
+        case .copperPiece:
+            "Copper Piece"
         case .silverPenny:
             "Silver Penny"
         case .silverPiece:

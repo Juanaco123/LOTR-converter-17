@@ -12,6 +12,9 @@ struct SelectCurrency: View {
     @Binding var topCurrency: Currency
     @Binding var bottomCurrency: Currency
     
+    let topCurrencyKey = "TopCurrency"
+    let bottomCurrencyKey = "BottomCurrency"
+    
     var body: some View {
         ZStack {
             // Parchment background image
@@ -48,6 +51,10 @@ struct SelectCurrency: View {
             }
             .padding()
             .multilineTextAlignment(.center)
+        }
+        .onDisappear {
+            UserDefaults.standard.set(topCurrency.rawValue, forKey: topCurrencyKey)
+            UserDefaults.standard.set(bottomCurrency.rawValue, forKey: bottomCurrencyKey)
         }
     }
 }
