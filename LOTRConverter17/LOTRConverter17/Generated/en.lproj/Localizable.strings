@@ -1,0 +1,24 @@
+//
+//  Localizable.Strings
+//  LOTRConverter17
+//
+//  Created by Juan Camilo Victoria Pacheco on 3/05/25.
+//
+
+"ContentView.Title" = "Currency Exchange";
+
+"CurrencyTip.Title" = "Change Currency";
+"CurrencyTip.Message" = "You can tap de left or right currency to bring up the Select Currency screen.";
+
+"SelectCurrency.StartCurrency" = "Select the currency you are starting with:";
+"SelectCurrency.CurrencyToConvert" = "Select the currency you would like to convert to:";
+"SelectCurrency.buttonLabel" = "Done";
+
+"ExchangeInfo.title" = "Exchange Rates";
+"ExchangeInfo.label" = "Here at the Prancing Pony, we are happy to offer you a place where you can exchange all the known currencies in the entire world except one. We used to take Brandy Bucks, but after finding out that it was a person instead of a piece of paper, we realized it had no value to us. Below is a simple guide to our currency exchange rates:";
+"ExchangeInfo.GoldToGoldPenny" = "1 Gold Piece = 4 Gold Pennies";
+"ExchangeInfo.GoldPennyToSilver" = "1 Gold Penny = 4 Silver Pieces";
+"ExchangeInfo.SilverToSilverPenny" = "1 silver Piece = 4 Silver Pennies";
+"ExchangeInfo.SilverPennyToCopper" = "1 Silver Penny = 16 Copper Pieces";
+"ExchangeInfo.CopperToCopperPenny" = "1 Copper Piece = 100 Copper Pennies";
+"ExchangeInfo.buttonLabel" = "Done";

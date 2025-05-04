@@ -21,7 +21,7 @@ struct ExchangeRate: View {
                 .frame(height: 33)
             
             // Exchange rate text
-            Text(text)
+            Text(LocalizedStringKey(text))
             
             // Right currency image
             Image(rightImage)

@@ -8,8 +8,8 @@
 import TipKit
 
 struct CurrencyTip: Tip {
-    var title = Text("Change Currency")
+    var title = Text(LocalizedStringKey("CurrencyTip.Title"))
     
-    var message: Text? = Text("You can tap de left or right currency to bring up the Select Currency screen.")
+    var message: Text? = Text(LocalizedStringKey("CurrencyTip.Message"))
     
 }
